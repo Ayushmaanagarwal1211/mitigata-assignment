@@ -25,7 +25,7 @@ export default function Stats({filteredData}) {
         { icon: <UserX size={52} color='green' />, title: "Blocked Users", value: stats.blockedPercentage },
       ];
   return (
-    <div className="grid grid-cols-4 gap-4 p-4 ">
+    <div className="grid grid-cols-4 gap-4 p-4 max-lg:grid-cols-2 max-sm:grid-cols-1">
     {items.map((stat, index) => (
       <div key={index} className="flex items-center  bg-white shadow-md rounded-xl px-4 py-10  border-[1px] border-gray-300">
         <div className="p-3  bg-green-100 rounded-lg">{stat.icon}</div>

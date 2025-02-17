@@ -13,12 +13,12 @@ export default function SearchUser() {
   }
 
   return (
-    <div className="relative">
+    <div className="relative max-md:w-[95vw]">
                 <input
                   type="text"
                   value={searchTerm}
                   onChange={handleChange}
-                  className="pl-10 pr-4 py-2 border-[1px] border-gray-400 bg-white rounded-lg w-64"
+                  className="pl-10 pr-4 max-md:w-[100%] max-md:mb-3 py-2 border-[1px] border-gray-400 bg-white rounded-lg w-64"
                   placeholder="Search users..."
                   
                 />

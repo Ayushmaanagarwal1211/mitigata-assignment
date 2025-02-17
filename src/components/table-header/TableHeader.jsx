@@ -20,9 +20,9 @@ export default function TableHeader() {
 
   }
   return (
-    <div className="p-4 m-5 flex justify-between items-center">
+    <div className="p-4 m-5 flex justify-between items-center flex-wrap">
               <SearchUser/>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 <StatusFilter/>
                 <DatePicker
                   selectsRange={true}

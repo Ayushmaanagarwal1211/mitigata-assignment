@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center mb-8">
-        <div>
+    <div className="flex justify-between items-center mb-8 flex-wrap">
+        <div className='mb-3'>
           <h1 className="text-4xl font-bold mb-2">User Details</h1>
           <p className="text-gray-600 text-2xl">
             Information about users, including name, email, start date, inviter, status, and available actions.

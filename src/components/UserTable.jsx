@@ -72,7 +72,7 @@ export default function UserTable ()  {
       <div className="bg-white mt-5  shadow rounded-2xl overflow-hidden " >
         
 
-        <div className="p-10 ">
+        <div className="p-10 overflow-x-auto ">
           <table className="w-full">
             <thead>
               <tr className="rounded-2xl text-xl font-normal text-gray-500">
