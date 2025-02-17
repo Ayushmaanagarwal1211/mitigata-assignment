@@ -1,14 +1,15 @@
-import { Search } from 'lucide-react'
 import React from 'react'
 import { Users, UserCheck, UserX } from "lucide-react"; // Lucide icons
+import { useSelector } from 'react-redux';
+import { selectData } from '../slices/TableSlice';
 
-export default function Stats({filteredData}) {
-
+export default function Stats() {
+  const filteredData = useSelector(state=>selectData(state))
 
       const stats = React.useMemo(() => {
         const total = filteredData.length;
-        const blocked = filteredData.filter(user => user.about.status === 'BLOCKED').length;
-        const inactive = filteredData.filter(user => user.about.status === 'INVITED').length;
+        const blocked = filteredData.filter(user => user.about.status.toLowerCase() === 'blocked').length;
+        const inactive = filteredData.filter(user => user.about.status.toLowerCase() === 'inactive').length;
         
         return {
           total,
@@ -24,6 +25,7 @@ export default function Stats({filteredData}) {
         { icon: <UserX size={52} color='green'/>, title: "Inactive Users", value: stats.inactivePercentage },
         { icon: <UserX size={52} color='green' />, title: "Blocked Users", value: stats.blockedPercentage },
       ];
+
   return (
     <div className="grid grid-cols-4 gap-4 p-4 max-lg:grid-cols-2 max-sm:grid-cols-1">
     {items.map((stat, index) => (

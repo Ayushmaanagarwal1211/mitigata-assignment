@@ -1,14 +1,13 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { handleFilter, selectStatusFilter, setStatusFilter } from '../../slices/TableSlice';
+import { selectSortingOptions, setSortingOptions } from '../../slices/TableSlice';
 
 export default function StatusFilter() {
     const dispatch = useDispatch();
-  const statusFilter = useSelector(state=>selectStatusFilter(state))
-
+  const statusFilter = useSelector(state=>selectSortingOptions(state)).statusFilter
+  console.log(statusFilter )
   function handleChange(e){
-    dispatch(setStatusFilter(e.target.value))
-    dispatch(handleFilter())
+    dispatch(setSortingOptions({type :"statusFilter" ,data : e.target.value.toLowerCase()}))
   }
 
   return (
@@ -17,10 +16,10 @@ export default function StatusFilter() {
                   onChange={handleChange}
                   className="border rounded-lg bg-white px-4 py-2"
                 >
-                  <option value="">Status</option>
-                  <option value="ACTIVE">Active</option>
-                  <option value="BLOCKED">Blocked</option>
-                  <option value="INVITED">Invited</option>
+                  <option value="">All</option>
+                  <option value="active">Active</option>
+                  <option value="blocked">Blocked</option>
+                  <option value="inactive">Inactive</option>
                 </select>
   )
 }

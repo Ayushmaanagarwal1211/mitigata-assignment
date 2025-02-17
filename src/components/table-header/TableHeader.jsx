@@ -3,21 +3,18 @@ import SearchUser from './SearchUser';
 import StatusFilter from './StatusFilter';
 import DatePicker from 'react-datepicker';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleFilter, resetFilters, selectDateRange, setDateRange } from '../../slices/TableSlice';
+import {  resetFilters, selectSortingOptions, setSortingOptions } from '../../slices/TableSlice';
 
-export default function TableHeader() {
-    const dateRange = useSelector(state=>selectDateRange(state))
+export default React.memo( function TableHeader() {
+    const dateRange = useSelector(state=>selectSortingOptions(state)).dateRange
     const dispatch = useDispatch();
 
- function handleChange(update){
+ function handleDateChange(update){
     const values = update.map(date => date ? date.toISOString() :null);
-    dispatch(setDateRange(values))
-    dispatch(handleFilter())
+    dispatch(setSortingOptions({data : values,type:"dateRange"}))
   }
   function handleClearFilters(){
     dispatch(resetFilters())
-    dispatch(handleFilter())
-
   }
   return (
     <div className="p-4 m-5 flex justify-between items-center flex-wrap">
@@ -29,7 +26,7 @@ export default function TableHeader() {
                   startDate={dateRange[0] ? new Date(dateRange[0]):null}
                   endDate={dateRange[1] ?new Date(dateRange[1])  :null}
                   onChange={(update) => {
-                    handleChange(update);
+                    handleDateChange(update);
                   }}
                   className="border  bg-white rounded-lg px-4 py-2"
                   placeholderText="Select date range"
@@ -42,3 +39,4 @@ export default function TableHeader() {
             </div>
   )
 }
+)

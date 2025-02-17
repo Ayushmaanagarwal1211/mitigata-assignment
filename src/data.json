@@ -7,7 +7,7 @@
         "email": "demo.d1@demo.com"
       },
       "details": {
-        "date": "03.10.2023",
+        "date": "03.10.2025",
         "invitedBy": "Dem 1"
       }
     },
@@ -19,7 +19,7 @@
         "email": "demo.d2@demo.com"
       },
       "details": {
-        "date": "27.06.2023",
+        "date": "27.06.2025",
         "invitedBy": "Dem 2"
       }
     },
@@ -31,7 +31,7 @@
         "email": "demo.d3@demo.com"
       },
       "details": {
-        "date": "25.12.2023",
+        "date": "25.12.2025",
         "invitedBy": "Dem 3"
       }
     },
@@ -43,7 +43,7 @@
         "email": "demo.d4@demo.com"
       },
       "details": {
-        "date": "04.01.2023",
+        "date": "04.01.2025",
         "invitedBy": "Dem 4"
       }
     },
@@ -51,11 +51,11 @@
       "id": "5",
       "about": {
         "name": "Demo Demo 5",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d5@demo.com"
       },
       "details": {
-        "date": "10.05.2023",
+        "date": "10.05.2025",
         "invitedBy": "Dem 5"
       }
     },
@@ -67,7 +67,7 @@
         "email": "demo.d6@demo.com"
       },
       "details": {
-        "date": "18.12.2023",
+        "date": "18.12.2025",
         "invitedBy": "Dem 6"
       }
     },
@@ -79,7 +79,7 @@
         "email": "demo.d7@demo.com"
       },
       "details": {
-        "date": "09.01.2023",
+        "date": "09.01.2025",
         "invitedBy": "Dem 7"
       }
     },
@@ -91,7 +91,7 @@
         "email": "demo.d8@demo.com"
       },
       "details": {
-        "date": "18.11.2023",
+        "date": "18.11.2025",
         "invitedBy": "Dem 8"
       }
     },
@@ -99,11 +99,11 @@
       "id": "9",
       "about": {
         "name": "Demo Demo 9",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d9@demo.com"
       },
       "details": {
-        "date": "25.10.2023",
+        "date": "25.10.2025",
         "invitedBy": "Dem 9"
       }
     },
@@ -115,7 +115,7 @@
         "email": "demo.d10@demo.com"
       },
       "details": {
-        "date": "21.02.2023",
+        "date": "21.02.2025",
         "invitedBy": "Dem 10"
       }
     },
@@ -127,7 +127,7 @@
         "email": "demo.d11@demo.com"
       },
       "details": {
-        "date": "07.06.2023",
+        "date": "07.06.2025",
         "invitedBy": "Dem 11"
       }
     },
@@ -139,7 +139,7 @@
         "email": "demo.d12@demo.com"
       },
       "details": {
-        "date": "25.05.2023",
+        "date": "25.05.2025",
         "invitedBy": "Dem 12"
       }
     },
@@ -151,7 +151,7 @@
         "email": "demo.d13@demo.com"
       },
       "details": {
-        "date": "24.04.2023",
+        "date": "24.04.2025",
         "invitedBy": "Dem 13"
       }
     },
@@ -159,11 +159,11 @@
       "id": "14",
       "about": {
         "name": "Demo Demo 14",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d14@demo.com"
       },
       "details": {
-        "date": "28.05.2023",
+        "date": "28.05.2025",
         "invitedBy": "Dem 14"
       }
     },
@@ -171,11 +171,11 @@
       "id": "15",
       "about": {
         "name": "Demo Demo 15",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d15@demo.com"
       },
       "details": {
-        "date": "11.12.2023",
+        "date": "11.12.2025",
         "invitedBy": "Dem 15"
       }
     },
@@ -187,7 +187,7 @@
         "email": "demo.d16@demo.com"
       },
       "details": {
-        "date": "25.10.2023",
+        "date": "25.10.2025",
         "invitedBy": "Dem 16"
       }
     },
@@ -199,7 +199,7 @@
         "email": "demo.d17@demo.com"
       },
       "details": {
-        "date": "18.09.2023",
+        "date": "18.09.2025",
         "invitedBy": "Dem 17"
       }
     },
@@ -207,11 +207,11 @@
       "id": "18",
       "about": {
         "name": "Demo Demo 18",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d18@demo.com"
       },
       "details": {
-        "date": "03.01.2023",
+        "date": "03.01.2025",
         "invitedBy": "Dem 18"
       }
     },
@@ -219,11 +219,11 @@
       "id": "19",
       "about": {
         "name": "Demo Demo 19",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d19@demo.com"
       },
       "details": {
-        "date": "16.11.2023",
+        "date": "16.11.2025",
         "invitedBy": "Dem 19"
       }
     },
@@ -235,7 +235,7 @@
         "email": "demo.d20@demo.com"
       },
       "details": {
-        "date": "15.12.2023",
+        "date": "15.12.2025",
         "invitedBy": "Dem 20"
       }
     },
@@ -247,7 +247,7 @@
         "email": "demo.d21@demo.com"
       },
       "details": {
-        "date": "03.03.2023",
+        "date": "03.03.2025",
         "invitedBy": "Dem 21"
       }
     },
@@ -255,11 +255,11 @@
       "id": "22",
       "about": {
         "name": "Demo Demo 22",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d22@demo.com"
       },
       "details": {
-        "date": "24.12.2023",
+        "date": "24.12.2025",
         "invitedBy": "Dem 22"
       }
     },
@@ -271,7 +271,7 @@
         "email": "demo.d23@demo.com"
       },
       "details": {
-        "date": "27.05.2023",
+        "date": "27.05.2025",
         "invitedBy": "Dem 23"
       }
     },
@@ -283,7 +283,7 @@
         "email": "demo.d24@demo.com"
       },
       "details": {
-        "date": "26.10.2023",
+        "date": "26.10.2025",
         "invitedBy": "Dem 24"
       }
     },
@@ -295,7 +295,7 @@
         "email": "demo.d25@demo.com"
       },
       "details": {
-        "date": "14.04.2023",
+        "date": "14.04.2025",
         "invitedBy": "Dem 25"
       }
     },
@@ -307,7 +307,7 @@
         "email": "demo.d26@demo.com"
       },
       "details": {
-        "date": "23.04.2023",
+        "date": "23.04.2025",
         "invitedBy": "Dem 26"
       }
     },
@@ -319,7 +319,7 @@
         "email": "demo.d27@demo.com"
       },
       "details": {
-        "date": "25.01.2023",
+        "date": "25.01.2025",
         "invitedBy": "Dem 27"
       }
     },
@@ -331,7 +331,7 @@
         "email": "demo.d28@demo.com"
       },
       "details": {
-        "date": "16.11.2023",
+        "date": "16.11.2025",
         "invitedBy": "Dem 28"
       }
     },
@@ -343,7 +343,7 @@
         "email": "demo.d29@demo.com"
       },
       "details": {
-        "date": "05.06.2023",
+        "date": "05.06.2025",
         "invitedBy": "Dem 29"
       }
     },
@@ -355,7 +355,7 @@
         "email": "demo.d30@demo.com"
       },
       "details": {
-        "date": "20.01.2023",
+        "date": "20.01.2025",
         "invitedBy": "Dem 30"
       }
     },
@@ -367,7 +367,7 @@
         "email": "demo.d31@demo.com"
       },
       "details": {
-        "date": "22.01.2023",
+        "date": "22.01.2025",
         "invitedBy": "Dem 31"
       }
     },
@@ -375,11 +375,11 @@
       "id": "32",
       "about": {
         "name": "Demo Demo 32",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d32@demo.com"
       },
       "details": {
-        "date": "01.08.2023",
+        "date": "01.08.2025",
         "invitedBy": "Dem 32"
       }
     },
@@ -391,7 +391,7 @@
         "email": "demo.d33@demo.com"
       },
       "details": {
-        "date": "11.06.2023",
+        "date": "11.06.2025",
         "invitedBy": "Dem 33"
       }
     },
@@ -403,7 +403,7 @@
         "email": "demo.d34@demo.com"
       },
       "details": {
-        "date": "25.01.2023",
+        "date": "25.01.2025",
         "invitedBy": "Dem 34"
       }
     },
@@ -411,11 +411,11 @@
       "id": "35",
       "about": {
         "name": "Demo Demo 35",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d35@demo.com"
       },
       "details": {
-        "date": "11.12.2023",
+        "date": "11.12.2025",
         "invitedBy": "Dem 35"
       }
     },
@@ -427,7 +427,7 @@
         "email": "demo.d36@demo.com"
       },
       "details": {
-        "date": "26.07.2023",
+        "date": "26.07.2025",
         "invitedBy": "Dem 36"
       }
     },
@@ -439,7 +439,7 @@
         "email": "demo.d37@demo.com"
       },
       "details": {
-        "date": "22.12.2023",
+        "date": "22.12.2025",
         "invitedBy": "Dem 37"
       }
     },
@@ -447,11 +447,11 @@
       "id": "38",
       "about": {
         "name": "Demo Demo 38",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d38@demo.com"
       },
       "details": {
-        "date": "27.10.2023",
+        "date": "27.10.2025",
         "invitedBy": "Dem 38"
       }
     },
@@ -463,7 +463,7 @@
         "email": "demo.d39@demo.com"
       },
       "details": {
-        "date": "02.08.2023",
+        "date": "02.08.2025",
         "invitedBy": "Dem 39"
       }
     },
@@ -471,11 +471,11 @@
       "id": "40",
       "about": {
         "name": "Demo Demo 40",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d40@demo.com"
       },
       "details": {
-        "date": "16.05.2023",
+        "date": "16.05.2025",
         "invitedBy": "Dem 40"
       }
     },
@@ -487,7 +487,7 @@
         "email": "demo.d41@demo.com"
       },
       "details": {
-        "date": "03.08.2023",
+        "date": "03.08.2025",
         "invitedBy": "Dem 41"
       }
     },
@@ -499,7 +499,7 @@
         "email": "demo.d42@demo.com"
       },
       "details": {
-        "date": "10.01.2023",
+        "date": "10.01.2025",
         "invitedBy": "Dem 42"
       }
     },
@@ -511,7 +511,7 @@
         "email": "demo.d43@demo.com"
       },
       "details": {
-        "date": "20.02.2023",
+        "date": "20.02.2025",
         "invitedBy": "Dem 43"
       }
     },
@@ -523,7 +523,7 @@
         "email": "demo.d44@demo.com"
       },
       "details": {
-        "date": "12.01.2023",
+        "date": "12.01.2025",
         "invitedBy": "Dem 44"
       }
     },
@@ -535,7 +535,7 @@
         "email": "demo.d45@demo.com"
       },
       "details": {
-        "date": "22.08.2023",
+        "date": "22.08.2025",
         "invitedBy": "Dem 45"
       }
     },
@@ -543,11 +543,11 @@
       "id": "46",
       "about": {
         "name": "Demo Demo 46",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d46@demo.com"
       },
       "details": {
-        "date": "11.07.2023",
+        "date": "11.07.2025",
         "invitedBy": "Dem 46"
       }
     },
@@ -559,7 +559,7 @@
         "email": "demo.d47@demo.com"
       },
       "details": {
-        "date": "11.05.2023",
+        "date": "11.05.2025",
         "invitedBy": "Dem 47"
       }
     },
@@ -571,7 +571,7 @@
         "email": "demo.d48@demo.com"
       },
       "details": {
-        "date": "19.01.2023",
+        "date": "19.01.2025",
         "invitedBy": "Dem 48"
       }
     },
@@ -583,7 +583,7 @@
         "email": "demo.d49@demo.com"
       },
       "details": {
-        "date": "09.06.2023",
+        "date": "09.06.2025",
         "invitedBy": "Dem 49"
       }
     },
@@ -595,7 +595,7 @@
         "email": "demo.d50@demo.com"
       },
       "details": {
-        "date": "10.07.2023",
+        "date": "10.07.2025",
         "invitedBy": "Dem 50"
       }
     },
@@ -607,7 +607,7 @@
         "email": "demo.d51@demo.com"
       },
       "details": {
-        "date": "17.03.2023",
+        "date": "17.03.2025",
         "invitedBy": "Dem 51"
       }
     },
@@ -619,7 +619,7 @@
         "email": "demo.d52@demo.com"
       },
       "details": {
-        "date": "05.09.2023",
+        "date": "05.09.2025",
         "invitedBy": "Dem 52"
       }
     },
@@ -631,7 +631,7 @@
         "email": "demo.d53@demo.com"
       },
       "details": {
-        "date": "05.02.2023",
+        "date": "05.02.2025",
         "invitedBy": "Dem 53"
       }
     },
@@ -639,11 +639,11 @@
       "id": "54",
       "about": {
         "name": "Demo Demo 54",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d54@demo.com"
       },
       "details": {
-        "date": "17.10.2023",
+        "date": "17.10.2025",
         "invitedBy": "Dem 54"
       }
     },
@@ -655,7 +655,7 @@
         "email": "demo.d55@demo.com"
       },
       "details": {
-        "date": "07.01.2023",
+        "date": "07.01.2025",
         "invitedBy": "Dem 55"
       }
     },
@@ -663,11 +663,11 @@
       "id": "56",
       "about": {
         "name": "Demo Demo 56",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d56@demo.com"
       },
       "details": {
-        "date": "12.07.2023",
+        "date": "12.07.2025",
         "invitedBy": "Dem 56"
       }
     },
@@ -679,7 +679,7 @@
         "email": "demo.d57@demo.com"
       },
       "details": {
-        "date": "21.06.2023",
+        "date": "21.06.2025",
         "invitedBy": "Dem 57"
       }
     },
@@ -691,7 +691,7 @@
         "email": "demo.d58@demo.com"
       },
       "details": {
-        "date": "13.07.2023",
+        "date": "13.07.2025",
         "invitedBy": "Dem 58"
       }
     },
@@ -703,7 +703,7 @@
         "email": "demo.d59@demo.com"
       },
       "details": {
-        "date": "20.05.2023",
+        "date": "20.05.2025",
         "invitedBy": "Dem 59"
       }
     },
@@ -715,7 +715,7 @@
         "email": "demo.d60@demo.com"
       },
       "details": {
-        "date": "20.05.2023",
+        "date": "20.05.2025",
         "invitedBy": "Dem 60"
       }
     },
@@ -727,7 +727,7 @@
         "email": "demo.d61@demo.com"
       },
       "details": {
-        "date": "02.08.2023",
+        "date": "02.08.2025",
         "invitedBy": "Dem 61"
       }
     },
@@ -739,7 +739,7 @@
         "email": "demo.d62@demo.com"
       },
       "details": {
-        "date": "05.05.2023",
+        "date": "05.05.2025",
         "invitedBy": "Dem 62"
       }
     },
@@ -751,7 +751,7 @@
         "email": "demo.d63@demo.com"
       },
       "details": {
-        "date": "01.05.2023",
+        "date": "01.05.2025",
         "invitedBy": "Dem 63"
       }
     },
@@ -763,7 +763,7 @@
         "email": "demo.d64@demo.com"
       },
       "details": {
-        "date": "05.12.2023",
+        "date": "05.12.2025",
         "invitedBy": "Dem 64"
       }
     },
@@ -775,7 +775,7 @@
         "email": "demo.d65@demo.com"
       },
       "details": {
-        "date": "13.05.2023",
+        "date": "13.05.2025",
         "invitedBy": "Dem 65"
       }
     },
@@ -787,7 +787,7 @@
         "email": "demo.d66@demo.com"
       },
       "details": {
-        "date": "27.06.2023",
+        "date": "27.06.2025",
         "invitedBy": "Dem 66"
       }
     },
@@ -799,7 +799,7 @@
         "email": "demo.d67@demo.com"
       },
       "details": {
-        "date": "20.03.2023",
+        "date": "20.03.2025",
         "invitedBy": "Dem 67"
       }
     },
@@ -811,7 +811,7 @@
         "email": "demo.d68@demo.com"
       },
       "details": {
-        "date": "18.08.2023",
+        "date": "18.08.2025",
         "invitedBy": "Dem 68"
       }
     },
@@ -823,7 +823,7 @@
         "email": "demo.d69@demo.com"
       },
       "details": {
-        "date": "24.01.2023",
+        "date": "24.01.2025",
         "invitedBy": "Dem 69"
       }
     },
@@ -835,7 +835,7 @@
         "email": "demo.d70@demo.com"
       },
       "details": {
-        "date": "19.09.2023",
+        "date": "19.09.2025",
         "invitedBy": "Dem 70"
       }
     },
@@ -847,7 +847,7 @@
         "email": "demo.d71@demo.com"
       },
       "details": {
-        "date": "03.08.2023",
+        "date": "03.08.2025",
         "invitedBy": "Dem 71"
       }
     },
@@ -859,7 +859,7 @@
         "email": "demo.d72@demo.com"
       },
       "details": {
-        "date": "21.07.2023",
+        "date": "21.07.2025",
         "invitedBy": "Dem 72"
       }
     },
@@ -871,7 +871,7 @@
         "email": "demo.d73@demo.com"
       },
       "details": {
-        "date": "20.02.2023",
+        "date": "20.02.2025",
         "invitedBy": "Dem 73"
       }
     },
@@ -879,11 +879,11 @@
       "id": "74",
       "about": {
         "name": "Demo Demo 74",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d74@demo.com"
       },
       "details": {
-        "date": "15.02.2023",
+        "date": "15.02.2025",
         "invitedBy": "Dem 74"
       }
     },
@@ -891,11 +891,11 @@
       "id": "75",
       "about": {
         "name": "Demo Demo 75",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d75@demo.com"
       },
       "details": {
-        "date": "27.12.2023",
+        "date": "27.12.2025",
         "invitedBy": "Dem 75"
       }
     },
@@ -907,7 +907,7 @@
         "email": "demo.d76@demo.com"
       },
       "details": {
-        "date": "17.06.2023",
+        "date": "17.06.2025",
         "invitedBy": "Dem 76"
       }
     },
@@ -919,7 +919,7 @@
         "email": "demo.d77@demo.com"
       },
       "details": {
-        "date": "07.08.2023",
+        "date": "07.08.2025",
         "invitedBy": "Dem 77"
       }
     },
@@ -931,7 +931,7 @@
         "email": "demo.d78@demo.com"
       },
       "details": {
-        "date": "11.05.2023",
+        "date": "11.05.2025",
         "invitedBy": "Dem 78"
       }
     },
@@ -943,7 +943,7 @@
         "email": "demo.d79@demo.com"
       },
       "details": {
-        "date": "09.08.2023",
+        "date": "09.08.2025",
         "invitedBy": "Dem 79"
       }
     },
@@ -955,7 +955,7 @@
         "email": "demo.d80@demo.com"
       },
       "details": {
-        "date": "07.01.2023",
+        "date": "07.01.2025",
         "invitedBy": "Dem 80"
       }
     },
@@ -967,7 +967,7 @@
         "email": "demo.d81@demo.com"
       },
       "details": {
-        "date": "02.06.2023",
+        "date": "02.06.2025",
         "invitedBy": "Dem 81"
       }
     },
@@ -975,11 +975,11 @@
       "id": "82",
       "about": {
         "name": "Demo Demo 82",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d82@demo.com"
       },
       "details": {
-        "date": "23.10.2023",
+        "date": "23.10.2025",
         "invitedBy": "Dem 82"
       }
     },
@@ -991,7 +991,7 @@
         "email": "demo.d83@demo.com"
       },
       "details": {
-        "date": "05.02.2023",
+        "date": "05.02.2025",
         "invitedBy": "Dem 83"
       }
     },
@@ -1003,7 +1003,7 @@
         "email": "demo.d84@demo.com"
       },
       "details": {
-        "date": "12.08.2023",
+        "date": "12.08.2025",
         "invitedBy": "Dem 84"
       }
     },
@@ -1015,7 +1015,7 @@
         "email": "demo.d85@demo.com"
       },
       "details": {
-        "date": "28.07.2023",
+        "date": "28.07.2025",
         "invitedBy": "Dem 85"
       }
     },
@@ -1027,7 +1027,7 @@
         "email": "demo.d86@demo.com"
       },
       "details": {
-        "date": "05.10.2023",
+        "date": "05.10.2025",
         "invitedBy": "Dem 86"
       }
     },
@@ -1035,11 +1035,11 @@
       "id": "87",
       "about": {
         "name": "Demo Demo 87",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d87@demo.com"
       },
       "details": {
-        "date": "08.07.2023",
+        "date": "08.07.2025",
         "invitedBy": "Dem 87"
       }
     },
@@ -1051,7 +1051,7 @@
         "email": "demo.d88@demo.com"
       },
       "details": {
-        "date": "17.07.2023",
+        "date": "17.07.2025",
         "invitedBy": "Dem 88"
       }
     },
@@ -1063,7 +1063,7 @@
         "email": "demo.d89@demo.com"
       },
       "details": {
-        "date": "04.01.2023",
+        "date": "04.01.2025",
         "invitedBy": "Dem 89"
       }
     },
@@ -1075,7 +1075,7 @@
         "email": "demo.d90@demo.com"
       },
       "details": {
-        "date": "10.07.2023",
+        "date": "10.07.2025",
         "invitedBy": "Dem 90"
       }
     },
@@ -1087,7 +1087,7 @@
         "email": "demo.d91@demo.com"
       },
       "details": {
-        "date": "11.09.2023",
+        "date": "11.09.2025",
         "invitedBy": "Dem 91"
       }
     },
@@ -1099,7 +1099,7 @@
         "email": "demo.d92@demo.com"
       },
       "details": {
-        "date": "21.08.2023",
+        "date": "21.08.2025",
         "invitedBy": "Dem 92"
       }
     },
@@ -1111,7 +1111,7 @@
         "email": "demo.d93@demo.com"
       },
       "details": {
-        "date": "04.11.2023",
+        "date": "04.11.2025",
         "invitedBy": "Dem 93"
       }
     },
@@ -1123,7 +1123,7 @@
         "email": "demo.d94@demo.com"
       },
       "details": {
-        "date": "25.07.2023",
+        "date": "25.07.2025",
         "invitedBy": "Dem 94"
       }
     },
@@ -1131,11 +1131,11 @@
       "id": "95",
       "about": {
         "name": "Demo Demo 95",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d95@demo.com"
       },
       "details": {
-        "date": "22.08.2023",
+        "date": "22.08.2025",
         "invitedBy": "Dem 95"
       }
     },
@@ -1147,7 +1147,7 @@
         "email": "demo.d96@demo.com"
       },
       "details": {
-        "date": "10.09.2023",
+        "date": "10.09.2025",
         "invitedBy": "Dem 96"
       }
     },
@@ -1159,7 +1159,7 @@
         "email": "demo.d97@demo.com"
       },
       "details": {
-        "date": "03.01.2023",
+        "date": "03.01.2025",
         "invitedBy": "Dem 97"
       }
     },
@@ -1171,7 +1171,7 @@
         "email": "demo.d98@demo.com"
       },
       "details": {
-        "date": "15.01.2023",
+        "date": "15.01.2025",
         "invitedBy": "Dem 98"
       }
     },
@@ -1179,11 +1179,11 @@
       "id": "99",
       "about": {
         "name": "Demo Demo 99",
-        "status": "INVITED",
+        "status": "inactive",
         "email": "demo.d99@demo.com"
       },
       "details": {
-        "date": "05.06.2023",
+        "date": "05.06.2025",
         "invitedBy": "Dem 99"
       }
     },
@@ -1195,7 +1195,7 @@
         "email": "demo.d100@demo.com"
       },
       "details": {
-        "date": "20.06.2023",
+        "date": "20.06.2025",
         "invitedBy": "Dem 100"
       }
     }

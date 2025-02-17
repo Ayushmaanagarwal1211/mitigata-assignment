@@ -1,27 +1,24 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Search, Calendar, ArrowUpDown, Download } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { ArrowUpDown } from 'lucide-react';
 import "react-datepicker/dist/react-datepicker.css";
-import Header from './Header';
-import Stats from './Stats';
-import TableHeader from './table-header/TableHeader';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleChangeStatus, handleColumnSorting, selectFilteredData, selectPaginatedData, setFilteredData } from '../slices/TableSlice';
+import { handleChangeStatus,selectFilteredData, selectSortingOptions, setSortingOptions } from '../slices/TableSlice';
 import TableFooter from './TableFooter';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBan, faCheckCircle, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
-
-
-export default function UserTable ()  {
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
+export default function TableBody ()  {
+  const sortConfig = useSelector(state=>selectSortingOptions(state)).sortConfig
   const filteredData = useSelector(state=>selectFilteredData(state))
   const status = [{status : "active", element : faCheckCircle}, {status : "inactive", element : faInfoCircle},{status : "blocked", element : faBan}];
-  const paginatedData = useSelector(state=>selectPaginatedData(state)) || []
   const dispatch  = useDispatch()
   const [loading,setLoading] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1);
+  
+
   const ref = useRef(null)
-    const [itemsPerPage,setItemsPerPage] = useState(5)
+  const [itemsPerPage,setItemsPerPage] = useState(5)
 
 
   const intersectionObserver = new IntersectionObserver((entries) => {
@@ -40,19 +37,14 @@ export default function UserTable ()  {
     })
   })
 
+  function handleColumnSort(e){
+    const newSortConfig = {
+      key : e.target.name,
+      direction: sortConfig.key === e.target.name && sortConfig.direction === 'asc' ? 'desc' : 'asc'
+    }
+    dispatch(setSortingOptions({data:newSortConfig,type:"sortConfig"}))
+  }
 
-  useEffect(()=>{
-    dispatch(handleColumnSorting(sortConfig))
-    console.log('dssdsd')
-  },[sortConfig])
-
-  const handleSort = (key) => {
-   
-    setSortConfig(current => ({
-      key,
-      direction: current.key === key && current.direction === 'asc' ? 'desc' : 'asc'
-    }));
-  };
 
   const renderSortIcon = (key) => {
     if (sortConfig.key !== key) return <ArrowUpDown className="w-4 h-4 opacity-50" />;
@@ -61,13 +53,17 @@ export default function UserTable ()  {
 
 
   function handleStatusChange(status,id){
+    console.log(status,id)
     dispatch(handleChangeStatus({status,id}))
   }
 
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedData = filteredData.slice(startIndex, startIndex + itemsPerPage);
+
+
   return (
 <>       
-    <Stats filteredData={filteredData}/>
-    <TableHeader/>
 
       <div className="bg-white mt-5  shadow rounded-2xl overflow-hidden " >
         
@@ -78,7 +74,8 @@ export default function UserTable ()  {
               <tr className="rounded-2xl text-xl font-normal text-gray-500">
                 <th className="px-6 py-4 text-left ">
                   <button
-                    onClick={() => handleSort('name')}
+                    onClick={handleColumnSort}
+                    name = "name"
                     className="flex items-center rounded-2xl gap-2"
                   >
                     Name {renderSortIcon('name')}
@@ -86,23 +83,26 @@ export default function UserTable ()  {
                 </th>
                 <th className="px-6 py-4 text-left ">
                   <button
-                    onClick={() => handleSort('email')}
+                    onClick={handleColumnSort}
                     className="flex items-center gap-2"
+                    name='email'
                   >
                     Email {renderSortIcon('email')}
                   </button>
                 </th>
                 <th className="px-6 py-4 text-left ">
                   <button
-                    onClick={() => handleSort('date')}
+                    onClick={handleColumnSort}
                     className="flex items-center gap-2"
+                    name='date'
                   >
                     Start Date {renderSortIcon('date')}
                   </button>
                 </th>
                 <th className="px-6 py-4 text-left">
                   <button
-                    onClick={() => handleSort('invitedBy')}
+                    onClick={handleColumnSort}
+                    name='invitedBy'
                     className="flex items-center gap-2"
                   >
                     Invited By {renderSortIcon('invitedBy')}
@@ -110,7 +110,8 @@ export default function UserTable ()  {
                 </th>
                 <th className="px-6 py-4 text-left ">
                   <button
-                    onClick={() => handleSort('status')}
+                    onClick={handleColumnSort}
+                    name='status'
                     className="flex items-center gap-2"
                   >
                     Status {renderSortIcon('status')}
@@ -170,7 +171,7 @@ export default function UserTable ()  {
         </div>
 
       </div>
-       <TableFooter itemsPerPage={itemsPerPage}/>
+       <TableFooter itemsPerPage={itemsPerPage} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </>  
   );
 };

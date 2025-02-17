@@ -1,15 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Search } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleFilter, selectData, selectFilteredData, selectSearchTerm, setFilteredData, setSearchTerm } from '../../slices/TableSlice';
+import {  selectSortingOptions,  setSortingOptions } from '../../slices/TableSlice';
 
 export default function SearchUser() {
   const dispatch = useDispatch();
-  const searchTerm = useSelector(state=>selectSearchTerm(state))
+  const searchTerm = useSelector(state=>selectSortingOptions(state)).searchTerm
 
   function handleChange(e){
-    dispatch(setSearchTerm(e.target.value))
-    dispatch(handleFilter())
+    dispatch(setSortingOptions({type:"searchTerm",data : e.target.value}))
   }
 
   return (
