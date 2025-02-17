@@ -97,6 +97,12 @@ const TableSlice = createSlice({
             if(["active","inactive","blocked"].includes(status)){
                 state.data = state.data.map((item) => item.id==id? {...item,about:{...item.about,status}} : item)
             }
+        },
+        resetFilters : (state,action)=>{
+            state.searchTerm = ''
+            state.statusFilter = ''
+            state.dateRange = [null,null]
+            state.sortConfig = {key:null,direction:'asc'}
         }
     }
 })
@@ -121,5 +127,5 @@ export function selectPaginatedData(state){
     return state.table.paginatedData
 }
 
-export const  {setData, setFilteredData,handleFilter,setPaginatedData,setDateRange,setSearchTerm,setSortConfig,setStatusFilter,handleColumnSorting,handleChangeStatus} = TableSlice.actions
+export const  {setData, setFilteredData,handleFilter,setPaginatedData,setDateRange,setSearchTerm,setSortConfig,setStatusFilter,handleColumnSorting,handleChangeStatus,resetFilters} = TableSlice.actions
 export default TableSlice.reducer

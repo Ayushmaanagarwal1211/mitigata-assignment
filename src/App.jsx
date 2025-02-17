@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import UserTable from './components/userTable';
+import UserTable from './components/UserTable';
 import data from './data.json';
 import Header from './components/Header';
 import { selectData, setData, setFilteredData } from './slices/TableSlice';
@@ -19,7 +19,7 @@ useEffect(()=>{
 
   return (
     <div className="min-h-screen bg-gray-100 p-10">
-          <div className="p-8">
+          <div className="p-8 mb-10">
               <Header/>
           </div>
       <UserTable data={dummy_data} />

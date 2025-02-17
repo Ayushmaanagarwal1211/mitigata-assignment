@@ -3,7 +3,7 @@ import SearchUser from './SearchUser';
 import StatusFilter from './StatusFilter';
 import DatePicker from 'react-datepicker';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleFilter, selectDateRange, setDateRange } from '../../slices/TableSlice';
+import { handleFilter, resetFilters, selectDateRange, setDateRange } from '../../slices/TableSlice';
 
 export default function TableHeader() {
     const dateRange = useSelector(state=>selectDateRange(state))
@@ -14,9 +14,13 @@ export default function TableHeader() {
     dispatch(setDateRange(values))
     dispatch(handleFilter())
   }
+  function handleClearFilters(){
+    dispatch(resetFilters())
+    dispatch(handleFilter())
 
+  }
   return (
-    <div className="p-4 flex justify-between items-center">
+    <div className="p-4 m-5 flex justify-between items-center">
               <SearchUser/>
               <div className="flex gap-4">
                 <StatusFilter/>
@@ -31,6 +35,9 @@ export default function TableHeader() {
                   placeholderText="Select date range"
                   dateFormat="dd.MM.yyyy"
                 />
+                <button className='py-2 px-3 bg-white rounded-lg border' onClick={handleClearFilters}>
+                  Clear All Filters
+                </button>
               </div>
             </div>
   )

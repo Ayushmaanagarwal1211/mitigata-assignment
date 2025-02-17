@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Search, Calendar, ArrowUpDown, Download } from 'lucide-react';
 import "react-datepicker/dist/react-datepicker.css";
 import Header from './Header';
@@ -19,6 +19,27 @@ export default function UserTable ()  {
   const status = [{status : "active", element : faCheckCircle}, {status : "inactive", element : faInfoCircle},{status : "blocked", element : faBan}];
   const paginatedData = useSelector(state=>selectPaginatedData(state)) || []
   const dispatch  = useDispatch()
+  const [loading,setLoading] = useState(false)
+  const ref = useRef(null)
+    const [itemsPerPage,setItemsPerPage] = useState(5)
+
+
+  const intersectionObserver = new IntersectionObserver((entries) => {
+    entries.map((entry)=>{
+      if(entry.isIntersecting){
+              setLoading(true)
+              console.log('sdsdsd')
+              intersectionObserver.unobserve(entry.target)
+              setTimeout(()=>{
+                setItemsPerPage(10)
+                setLoading(false)
+                
+              },1000)
+              console.log("LOADING")
+      }
+    })
+  })
+
 
   useEffect(()=>{
     dispatch(handleColumnSorting(sortConfig))
@@ -48,10 +69,10 @@ export default function UserTable ()  {
     <Stats filteredData={filteredData}/>
     <TableHeader/>
 
-      <div className="bg-white  shadow rounded-2xl overflow-hidden " >
+      <div className="bg-white mt-5  shadow rounded-2xl overflow-hidden " >
         
 
-        <div className="p-10 pb-0">
+        <div className="p-10 ">
           <table className="w-full">
             <thead>
               <tr className="rounded-2xl text-xl font-normal text-gray-500">
@@ -102,7 +123,16 @@ export default function UserTable ()  {
             </thead>
             <tbody>
               {paginatedData.map((user) => (
-                <tr key={user.id} className=" hover:bg-gray-50 border-b-[1px] border-b-gray-300">
+                <tr key={user.id} ref={(currRef)=>{
+                  if(itemsPerPage==5){
+                    if(ref.current){
+                      intersectionObserver.unobserve(ref.current)
+                    }
+                    intersectionObserver.observe(currRef)
+                    ref.current = currRef
+                  }
+                  return ()=> intersectionObserver.unobserve(currRef)
+                }} className=" hover:bg-gray-50 border-b-[1px] py-8 border-b-gray-300">
                   <td className="px-6 py-4 text-lg text-black font-semibold">{user.about.name}</td>
                   <td className="px-6 py-4 text-lg">{user.about.email}</td>
                   <td className="px-6 py-4 text-lg">{user.details.date}</td>
@@ -128,12 +158,19 @@ export default function UserTable ()  {
                   </td>
                 </tr>
               ))}
+              {
+                loading && <tr >
+                  <td></td>
+                  <td></td>  <td></td>           <td>   <div className="pt-6 w-10 h-10 border-4 mt-6 border-gray-300 border-t-green-500 rounded-full animate-spin"></div></td>
+                  <td></td><td></td>
+             </tr>
+              }
             </tbody>
           </table>
         </div>
 
       </div>
-       <TableFooter/>
+       <TableFooter itemsPerPage={itemsPerPage}/>
       </>  
   );
 };

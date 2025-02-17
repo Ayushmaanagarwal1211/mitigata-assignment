@@ -1,18 +1,22 @@
-import React, { useEffect ,useState} from 'react'
+import React, { useEffect ,useRef,useState} from 'react'
 import { selectFilteredData, setPaginatedData } from '../slices/TableSlice';
 import { current } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 
-export default function TableFooter() {
+export default function TableFooter({itemsPerPage}) {
     const filteredData = useSelector(state=>selectFilteredData(state));
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10;
 
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
     const startIndex = (currentPage - 1) * itemsPerPage;
     const paginatedData = filteredData.slice(startIndex, startIndex + itemsPerPage);
     const dispatch = useDispatch()
 
+   console.log(itemsPerPage)
+  
+  
+  
+  
     useEffect(()=>{
         dispatch(setPaginatedData(paginatedData))
     },[currentPage, itemsPerPage,filteredData])
