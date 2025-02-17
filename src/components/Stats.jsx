@@ -31,7 +31,7 @@ export default function Stats({filteredData}) {
         <div className="p-3  bg-green-100 rounded-lg">{stat.icon}</div>
         <div className="ml-4">
           <h3 className="text-gray-500 text-md font-semibold">{stat.title}</h3>
-          <p className="text-4xl font-bold mt-2  text-gray-700">{stat.value + "%"}</p>
+          <p className="text-4xl font-bold mt-2  text-gray-700">{stat.value + (index>=2 && "%")}</p>
         </div>
       </div>
     ))}
