@@ -1,0 +1,40 @@
+import { Search } from 'lucide-react'
+import React from 'react'
+import { Users, UserCheck, UserX } from "lucide-react"; // Lucide icons
+
+export default function Stats({filteredData}) {
+
+
+      const stats = React.useMemo(() => {
+        const total = filteredData.length;
+        const blocked = filteredData.filter(user => user.about.status === 'BLOCKED').length;
+        const inactive = filteredData.filter(user => user.about.status === 'INVITED').length;
+        
+        return {
+          total,
+          blockedPercentage: ((blocked / total) * 100).toFixed(1),
+          inactivePercentage: ((inactive / total) * 100).toFixed(1),
+        };
+      }, [filteredData]);
+
+
+      const items = [
+        { icon: <Users size={52} color='green'/>, title: "Total Users", value: stats.total },
+        { icon: <UserCheck size={52} color='green' />, title: "Active Users", value: (100 - (+stats.blockedPercentage + +stats.inactivePercentage)) },
+        { icon: <UserX size={52} color='green'/>, title: "Inactive Users", value: stats.inactivePercentage },
+        { icon: <UserX size={52} color='green' />, title: "Blocked Users", value: stats.blockedPercentage },
+      ];
+  return (
+    <div className="grid grid-cols-4 gap-4 p-4">
+    {items.map((stat, index) => (
+      <div key={index} className="flex items-center  bg-white shadow-md rounded-xl px-4 py-8  border-[1px] border-gray-300">
+        <div className="p-3  bg-green-100 rounded-lg">{stat.icon}</div>
+        <div className="ml-4">
+          <h3 className="text-gray-500 text-md font-semibold">{stat.title}</h3>
+          <p className="text-4xl font-bold mt-2  text-gray-700">{stat.value + "%"}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+  )
+}
