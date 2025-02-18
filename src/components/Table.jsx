@@ -11,7 +11,7 @@ import dummyData from "../data.json";
 import TableHeader from "./table-header/TableHeader";
 export default function Table() {
   const dispatch = useDispatch();
-  const data = useSelector(state=>selectData(state))
+  const data = useSelector((state) => selectData(state));
   const sortingOptions = useSelector((state) => selectSortingOptions(state));
   useEffect(() => {
     dispatch(setData(dummyData));
@@ -19,7 +19,7 @@ export default function Table() {
 
   useEffect(() => {
     dispatch(handleFilter());
-  }, [sortingOptions,data]);
+  }, [sortingOptions, data]);
 
   return (
     <>
